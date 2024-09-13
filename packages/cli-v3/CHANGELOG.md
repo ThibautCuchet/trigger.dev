@@ -1,5 +1,37 @@
 # trigger.dev
 
+## 3.0.0-beta.57
+
+### Patch Changes
+
+- 8578c9b28: Fixed empty env vars overriding in dev runs
+- f9ec66c56: New Build System
+- f04041744: Fix entry point paths on windows
+- 8578c9b28: Support self-hosters pushing to a custom registry when running deploy
+- 8578c9b28: Fix --project-ref when running deploy
+- f04041744: Support custom config file names & paths
+- a50063ce0: Always insert the dirs option when initializing a new project in the trigger.config.ts
+- 8578c9b28: Fixed stuck runs when a child run fails with a process exit
+- 392453e8a: Fix for when a log flush times out and the process is checkpointed
+- 8578c9b28: Add remote forced externals system, in case we come across another package that cannot be bundled (spurred on by header-generator)
+- 8578c9b28: Only import import-in-the-middle hook if there are instrumented packages
+- f04041744: Support for custom conditions
+- Updated dependencies [f9ec66c56]
+- Updated dependencies [f7d32b83b]
+- Updated dependencies [8c690a960]
+- Updated dependencies [8578c9b28]
+- Updated dependencies [8578c9b28]
+- Updated dependencies [8578c9b28]
+- Updated dependencies [e30beb779]
+- Updated dependencies [392453e8a]
+- Updated dependencies [8578c9b28]
+- Updated dependencies [8578c9b28]
+- Updated dependencies [f9ec66c56]
+- Updated dependencies [8578c9b28]
+- Updated dependencies [f04041744]
+  - @trigger.dev/core@3.0.0-beta.57
+  - @trigger.dev/build@3.0.0-beta.57
+
 ## 3.0.0-beta.55
 
 ### Patch Changes

@@ -1,5 +1,19 @@
 # internal-platform
 
+## 3.0.0-beta.57
+
+### Patch Changes
+
+- f9ec66c56: New Build System
+- f7d32b83b: Removed the folder/filepath from Attempt spans
+- 8578c9b28: Support self-hosters pushing to a custom registry when running deploy
+- e30beb779: Added support for custom esbuild plugins
+- 392453e8a: Fix for when a log flush times out and the process is checkpointed
+- 8578c9b28: Add remote forced externals system, in case we come across another package that cannot be bundled (spurred on by header-generator)
+- 8578c9b28: fix node10 moduleResolution in @trigger.dev/core
+- 8578c9b28: Only import import-in-the-middle hook if there are instrumented packages
+- f04041744: Support for custom conditions
+
 ## 3.0.0-beta.55
 
 ## 3.0.0-beta.54
