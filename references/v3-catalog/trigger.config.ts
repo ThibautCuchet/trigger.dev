@@ -41,6 +41,17 @@ export default defineConfig({
       ffmpeg(),
       emitDecoratorMetadata(),
       audioWaveform(),
+      {
+        name: "debug",
+        onBuildComplete: (ctx) => {
+          ctx.addLayer({
+            id: "debug",
+            image: {
+              instructions: ["RUN apt-get update", "RUN apt-get install -y curl"],
+            }
+          })
+        }
+      },
       prismaExtension({
         schema: "prisma/schema/schema.prisma",
         migrate: true,
@@ -80,7 +91,7 @@ export default defineConfig({
           value: secret.secretValue,
         }));
       }),
-      puppeteer(),
+      // puppeteer(),
     ],
     external: ["re2"],
   },
